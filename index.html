@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zehra'ya Sevgilerle</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .kalp-container {
+            text-align: center;
+            animation: zıpla 2s infinite;
+        }
+
+        .mesaj {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .kalp {
+            color: red;
+            font-size: 100px;
+            animation: kalp-at 1s infinite;
+        }
+
+        @keyframes kalp-at {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes zıpla {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="kalp-container">
+        <div class="mesaj">Zehra'yı Çok Seviyorum</div>
+        <div class="kalp">❤️</div>
+    </div>
+</body>
+</html>
